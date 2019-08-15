@@ -1,20 +1,14 @@
 import React from "react";
-import { connect } from "react-redux";
 
 const House = props => {
     return (
-    <h1>{props.test}</h1>
+        <div>
+    <h1>{props.house.name}</h1>
+        </div>
     )
 }
 
-const mapStateToProps = state => {
-    return {
-      test: state.test,
-    };
-  };
 
 
-  export default connect(
-    mapStateToProps,
-    {}
-  )(House);
+export default House; 
+  

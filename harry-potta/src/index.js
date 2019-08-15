@@ -2,13 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+
+import logger from 'redux-logger';
 
 import { harryPotterReducer } from "./reducers";
 
 
-export const store = createStore(harryPotterReducer);
+export const store = createStore(harryPotterReducer, applyMiddleware(logger));
 console.log(store);
 
 ReactDOM.render(
