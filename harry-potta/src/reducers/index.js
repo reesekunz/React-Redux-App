@@ -1,7 +1,7 @@
 
 const initialState = {
     harrypotterhouses: [],
-    test: "testing - it's working"
+    isLoading: true, 
 };
 
 export const harryPotterReducer = (state = initialState, action) => {
