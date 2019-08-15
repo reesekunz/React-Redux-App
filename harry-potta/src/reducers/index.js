@@ -26,8 +26,13 @@ case FETCHING_HARRY_POTTER_DATA_SUCCESS:
         error: ""
 
     }
-    
-
+    case FETCHING_HARRY_POTTER_DATA_FAILURE:
+    return{
+        ...state,
+        isLoading: false,
+        webcams: action.payload,
+        error: ""
+    }
         default: 
         return state;
     }
