@@ -38,7 +38,7 @@ const HouseList = props => {
 const mapStateToProps = state => {
   return {
     isLoading: state.isLoading,
-    harryPotter: state.harryPotter
+    harryPotterHouses: state.harryPotterHouses
   };
 };
 
