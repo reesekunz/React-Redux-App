@@ -5,12 +5,12 @@ import App from "./App";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 
-import logger from 'redux-logger';
+import thunk from 'redux-thunk';
 
 import { harryPotterReducer } from "./reducers";
 
 
-export const store = createStore(harryPotterReducer, applyMiddleware(logger));
+export const store = createStore(harryPotterReducer, applyMiddleware(thunk));
 console.log(store);
 
 ReactDOM.render(
